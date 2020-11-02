@@ -25,9 +25,7 @@ Note that many works express computational complexity in FLOPS, even though the 
 * IN1K: ImageNet-->
 
 
-## Applicable on existing architectures
-Most methods demonstrate dynamic execution on ResNet or other classification backbones.
-
+## Methods 
 ### Early-exit methods
 Early-exit methods have separate output branches to apply more or fewer layers.
 
@@ -126,10 +124,10 @@ Adaptive resolution methods adapt the processing resolution to the input image.
 * **Resolution Switchable Networks for Runtime Eﬃcient Image Recognition** (ECCV2020) [[pdf]](https://arxiv.org/pdf/2007.09558) [[pytorch]](https://github.com/yikaiw/RS-Nets)  
 Y. Wang, F. Sun, D. Li, and A. Yao
 
-## Custom architectures
+### Custom architectures
 Some methods use custom architectures for dynamic inference, e.g. by refining predictions in multiple stages.
 
-### Glances and dynamic crops
+#### Glances and dynamic crops
 Takes crops to further refine predictions
 
 * **Action Recognition using Visual Attention** (ICLR 2016 Workshop) [[pdf]](https://arxiv.org/pdf/1511.04119) [[theano]](https://github.com/kracwarlock/action-recognition-visual-attention)  
@@ -144,7 +142,7 @@ A. Almahairi, N. Ballas, T. Cooijmans, Y. Zheng, H. Larochelle, and A. Courville
 * **Learning Where to Focus for Eﬃcient Video Object Detection** (ECCV2020)  [[pdf]](https://arxiv.org/pdf/1911.05253.pdf) [[github]](https://github.com/jiangzhengkai/LSTS)  
 Z. Jiang et al.
 
-### Mixture of experts
+#### Mixture of experts
 * **HydraNets: Specialized Dynamic Architectures for Efficient Inference** (CVPR2019) [[pdf]](https://openaccess.thecvf.com/content_cvpr_2018/papers/Mullapudi_HydraNets_Specialized_Dynamic_CVPR_2018_paper.pdf)   
 Teja Mullapudi R, Mark WR, Shazeer N, Fatahalian K.
 * **Outrageously large neural networks: The sparsely-gated mixture-of-experts layer** (ICLR 2017) [[pdf]](https://arxiv.org/pdf/1701.06538.pdf%22%20%5Ct%20%22_blank)  [[unofficial pytorch]](https://github.com/davidmrau/mixture-of-experts)  
