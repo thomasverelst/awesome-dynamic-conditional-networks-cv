@@ -99,7 +99,7 @@ Spatial methods exploit spatial redundancies, such as unimportant regions, to sa
 
 * **PerforatedCNNs: Acceleration through Elimination of Redundant Convolutions**  (NIPS2016) [[pdf]](https://papers.nips.cc/paper/6463-perforatedcnns-acceleration-through-elimination-of-redundant-convolutions.pdf) [[matconvnet]](https://github.com/mfigurnov/perforated-cnn-matconvnet) [[caffe]](https://github.com/mfigurnov/perforated-cnn-caffe)  
 M. Figurnov, A. Ibraimova, D. P. Vetrov, and P. Kohli
-* **Spatially Adaptive Computation Time for Residual Networks** (CVPR2017)  [[pdf]]((http://openaccess.thecvf.com/content_cvpr_2017/papers/Figurnov_Spatially_Adaptive_Computation_CVPR_2017_paper.pdf)) [[tensorflow]](https://github.com/mfigurnov/sact)  
+* **Spatially Adaptive Computation Time for Residual Networks** (CVPR2017)  [[pdf]](http://openaccess.thecvf.com/content_cvpr_2017/papers/Figurnov_Spatially_Adaptive_Computation_CVPR_2017_paper.pdf) [[tensorflow]](https://github.com/mfigurnov/sact)  
 Figurnov M, Collins MD, Zhu Y, Zhang L, Huang J, Vetrov D, Salakhutdinov R. 
 * **Channel Gating Neural Networks** (NIPS2019) [[pdf]](https://papers.nips.cc/paper/8464-channel-gating-neural-networks.pdf) [[pytorch]](https://github.com/cornell-zhang/dnn-gating)  
 W. Hua, Y. Zhou, C. M. De Sa, Z. Zhang, and G. E. Suh
