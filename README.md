@@ -54,6 +54,8 @@ Hu TK, Chen T, Wang H, Wang Z.
 ### Layer skip-based methods
 Skip layer-based methods skip layers conditioned on the input image. For instance, easy images require fewer layers than complex ones.
 
+*  **Adaptive Computation Time for Recurrent Neural Networks** (NIPS 2016 Deep Learning Symposium) [[pdf]](https://arxiv.org/pdf/1603.08983) [[unofficial pytorch]](https://github.com/zphang/adaptive-computation-time-pytorch)  
+A. Graves
 * **Convolutional Networks with Adaptive Inference Graphs**  (ECCV2018) [[pdf]](https://openaccess.thecvf.com/content_ECCV_2018/papers/Andreas_Veit_Convolutional_Networks_with_ECCV_2018_paper.pdf) [[Pytorch]](https://github.com/andreasveit/convnet-aig)  
 A. Veit and S. Belongie
 * **SkipNet: Learning Dynamic Routing in Convolutional Networks** (ECCV2018) [[pdf]](https://arxiv.org/pdf/1711.09485.pdf) [[Pytorch]](https://github.com/ucbdrive/skipnet)    
@@ -79,8 +81,6 @@ Guo, Q., Yu, Z., Wu, Y., Liang, D., Qin, H., and Yan, J.
 Channel-based methods execute specific channels to reduce computational complexity.
 * **Estimating or propagating gradients through stochastic neurons for conditional computation** [[pdf]](https://arxiv.org/pdf/1308.3432.pdf)  
 Bengio Y, Léonard N, Courville A.
-*  **Adaptive Computation Time for Recurrent Neural Networks** (NIPS 2016 Deep Learning Symposium) [[pdf]](https://arxiv.org/pdf/1603.08983) [[unofficial pytorch]](https://github.com/zphang/adaptive-computation-time-pytorch)  
-A. Graves
 * **Runtime Neural Pruning** (NIPS2017) [[pdf]](http://papers.nips.cc/paper/6813-runtime-neural-pruning.pdf)  
 J. Lin, Y. Rao, J. Lu, and J. Zhou
 * **Dynamic Channel Pruning: Feature Boosting and Suppression** (Arxiv2018) [[pdf]](https://arxiv.org/pdf/1810.05331) [[tensorflow]](https://github.com/deep-fry/mayo) [[unoffical pytorch]](https://github.com/yulongwang12/pytorch-fbs)  
