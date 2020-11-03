@@ -1,7 +1,7 @@
 # Awesome Dynamic Networks and Conditional Computation
 (Incomplete) overview of conditional computation and dynamic CNNs for computer vision, focusing on reducing computational cost of existing network architectures. In contrast to static networks, dynamic networks disable parts of the network based on the input image, at inference time. This can save computations and speed up inference, for example by processing easy images with fewer operations. Note that this list mainly focuses on methods reducing the computational cost of existing models (e.g. ResNet models), and does not list all methods that use dynamic computation for custom architectures.
 
-**This list is growing every day. If a method is missing or listed incorrectly, let me know by making a GitHub issue!**
+**This list is growing every day. If a method is missing or listed incorrectly, let me know by sending an email <thomas.verelst@esat.kuleuven.be> or making a GitHub issue!**
 
 [Here](https://github.com/MingSun-Tse/EfficientDNNs) is a list with more static and dynamic methods for efficient CNNs.
 
@@ -85,6 +85,8 @@ Bengio Y, Léonard N, Courville A.
 J. Lin, Y. Rao, J. Lu, and J. Zhou
 * **Dynamic Channel Pruning: Feature Boosting and Suppression** (Arxiv2018) [[pdf]](https://arxiv.org/pdf/1810.05331) [[tensorflow]](https://github.com/deep-fry/mayo) [[unoffical pytorch]](https://github.com/yulongwang12/pytorch-fbs)  
  X. Gao, Y. Zhao, Ł. Dudziak, R. Mullins, and C. Xu.
+ * **Channel Gating Neural Networks** (NIPS2019) [[pdf]](https://papers.nips.cc/paper/8464-channel-gating-neural-networks.pdf) [[pytorch]](https://github.com/cornell-zhang/dnn-gating)  
+W. Hua, Y. Zhou, C. M. De Sa, Z. Zhang, and G. E. Suh
 * **You Look Twice: GaterNet for Dynamic Filter Selection in CNNs**  (CVPR2019) [[pdf]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Chen_You_Look_Twice_GaterNet_for_Dynamic_Filter_Selection_in_CNNs_CVPR_2019_paper.pdf)  
 Z. Chen, Y. Li, S. Bengio, and S. Si
 * **Runtime Network Routing for Efficient Image Classification** (TPAMI2019) [[pdf]](https://ieeexplore.ieee.org/iel7/34/8824149/08510920.pdf?casa_token=hMXAytJvXQ4AAAAA:4e4H69Y-K9XlzXxIR-tr0e76MQomeRPAnOiuKXLY2jIdR4_Lg3ZkyF5WRt14942gFd5MSoafy16j)  
@@ -93,6 +95,8 @@ Y. Rao, J. Lu, J. Lin, and J. Zhou
 S. E. Spasov and P. Lio
 * **Learning Instance-wise Sparsity for Accelerating Deep Models** (IJCAI2019) [[pdf]](https://arxiv.org/pdf/1907.11840.pdf)  
 Liu C, Wang Y, Han K, Xu C, Xu C.
+* **Batch-Shaping for Learning Conditional Channel Gated Networks** (ICLR2020) [[pdf]](https://arxiv.org/pdf/1907.06627.pdf)  
+BE Bejnordi, T Blankevoort, M Welling
 
 ### Spatial pixel-wise methods
 Spatial methods exploit spatial redundancies, such as unimportant regions, to save computations
@@ -101,8 +105,6 @@ Spatial methods exploit spatial redundancies, such as unimportant regions, to sa
 M. Figurnov, A. Ibraimova, D. P. Vetrov, and P. Kohli
 * **Spatially Adaptive Computation Time for Residual Networks** (CVPR2017)  [[pdf]](http://openaccess.thecvf.com/content_cvpr_2017/papers/Figurnov_Spatially_Adaptive_Computation_CVPR_2017_paper.pdf) [[tensorflow]](https://github.com/mfigurnov/sact)  
 Figurnov M, Collins MD, Zhu Y, Zhang L, Huang J, Vetrov D, Salakhutdinov R. 
-* **Channel Gating Neural Networks** (NIPS2019) [[pdf]](https://papers.nips.cc/paper/8464-channel-gating-neural-networks.pdf) [[pytorch]](https://github.com/cornell-zhang/dnn-gating)  
-W. Hua, Y. Zhou, C. M. De Sa, Z. Zhang, and G. E. Suh
 * **Pixel-wise Attentional Gating for Parsimonious Pixel Labeling** (WACV2019) [[pdf]](https://arxiv.org/pdf/1805.01556) [[matconvnet]](https://github.com/aimerykong/Pixel-Attentional-Gating)  
 S. Kong and C. Fowlkes
 * **Dynamic Convolutions: Exploiting Spatial Sparsity for Faster Inference** (CVPR2020) [[pdf]](https://arxiv.org/pdf/1912.03203.pdf) [[Pytorch]](https://github.com/thomasverelst/dynconv)  
