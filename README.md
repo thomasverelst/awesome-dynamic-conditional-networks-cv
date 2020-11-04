@@ -137,7 +137,7 @@ S. Sharma, R. Kiros, and R. Salakhutdinov
 
 * **Recurrent Models of Visual Attention** (NIPS2014) [[pdf]](https://papers.nips.cc/paper/5542-recurrent-models-of-visual-attention.pdf)  
 V. Mnih, N. Heess, A. Graves, and  koray kavukcuoglu
-* **Dynamic Capacity Networks** (ICML20116) [[pdf]](http://www.jmlr.org/proceedings/papers/v48/almahairi16.pdf) [[tensorflow]](https://github.com/beopst/dcn.tf) [[unofficial pytorch]](https://github.com/philqc/Dynamic-Capacity-Network-Pytorch)  
+* **Dynamic Capacity Networks** (ICML2016) [[pdf]](http://www.jmlr.org/proceedings/papers/v48/almahairi16.pdf) [[tensorflow]](https://github.com/beopst/dcn.tf) [[unofficial pytorch]](https://github.com/philqc/Dynamic-Capacity-Network-Pytorch)  
 A. Almahairi, N. Ballas, T. Cooijmans, Y. Zheng, H. Larochelle, and A. Courville 
 * **Glance and Focus: a Dynamic Approach to Reducing Spatial Redundancy in Image Classification** [[pdf]](https://arxiv.org/pdf/2010.05300)  
  Y. Wang, K. Lv, R. Huang, S. Song, L. Yang, and G. Huang
