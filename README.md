@@ -1,5 +1,5 @@
 # Awesome Dynamic Networks and Conditional Computation
-(Incomplete) overview of conditional computation and dynamic CNNs for computer vision, focusing on reducing computational cost of existing network architectures. In contrast to static networks, dynamic networks disable parts of the network based on the input image, at inference time. This can save computations and speed up inference, for example by processing easy images with fewer operations. Note that this list mainly focuses on methods reducing the computational cost of existing models (e.g. ResNet models), and does not list all methods that use dynamic computation for custom architectures.
+Overview of conditional computation and dynamic CNNs for computer vision, focusing on reducing computational cost of existing network architectures. In contrast to static networks, dynamic networks disable parts of the network based on the input image, at inference time. This can save computations and speed up inference, for example by processing easy images with fewer operations. Note that this list mainly focuses on methods reducing the computational cost of existing models (e.g. ResNet models), and does not list all methods that use dynamic computation for custom architectures.
 
 **This list is growing every day. If a method is missing or listed incorrectly, let me know by sending an <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#104;&#111;&#109;&#97;&#115;&#46;&#118;&#101;&#114;&#101;&#108;&#115;&#116;&#64;&#101;&#115;&#97;&#116;&#46;&#107;&#117;&#108;&#101;&#117;&#118;&#101;&#110;&#46;&#98;&#101;">email</a> or making a GitHub issue!**
 
@@ -107,7 +107,7 @@ M. Figurnov, A. Ibraimova, D. P. Vetrov, and P. Kohli
 Figurnov M, Collins MD, Zhu Y, Zhang L, Huang J, Vetrov D, Salakhutdinov R. 
 * **Pixel-wise Attentional Gating for Parsimonious Pixel Labeling** (WACV2019) [[pdf]](https://arxiv.org/pdf/1805.01556) [[matconvnet]](https://github.com/aimerykong/Pixel-Attentional-Gating)  
 S. Kong and C. Fowlkes
-* **Boosting the Performance of CNN Accelerators with Dynamic Fine-Grained Channel Gating** [[pdf]](https://zhouyuan1119.github.io/papers/cgnet-micro2019.pdf) 
+* **Boosting the Performance of CNN Accelerators with Dynamic Fine-Grained Channel Gating** (MICRO2019) [[pdf]](https://zhouyuan1119.github.io/papers/cgnet-micro2019.pdf) 
 Weizhe Hua, Yuan Zhou, Christopher De Sa, Zhiru Zhang, and G. Edward Suh
 * **Dynamic Convolutions: Exploiting Spatial Sparsity for Faster Inference** (CVPR2020) [[pdf]](https://arxiv.org/pdf/1912.03203.pdf) [[Pytorch]](https://github.com/thomasverelst/dynconv)  
 T. Verelst and T. Tuytelaars, “Dynamic Convolutions: Exploiting Spatial Sparsity for Faster Inference
