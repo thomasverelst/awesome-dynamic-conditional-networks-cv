@@ -15,7 +15,7 @@ Methods have three important distinguishing factors:
 Most methods demonstrate performance with the reduction in computations (i.e. measured in floating point operations, FLOPS) compared to the loss in accuracy. 
 Methods typically show figures where  baseline models of different complexities (e.g. by reducing the number of channels) are compared to the method applied to the largest model with different cost savings.
 
-Note that many works express computational complexity in FLOPS, even though the given numbers are actually multiply-accumulate operations (MACs), and GMACs = 0.5 * GFLOPs (see https://github.com/sovrasov/flops-counter.pytorch/issues/16 ). Some recent works therefore use GMAC instead of GFLOP for correctness.
+Note that many works express computational complexity in FLOPS, even though the given numbers are actually multiply-accumulate operations (MACs), and GMACs = 0.5 * GFLOPs (see https://github.com/sovrasov/flops-counter.pytorch/issues/16 ). Some recent works therefore use GMAC instead of GFLOP to avoid ambiguity.
 
 
 <!--**Indicators used below**:
