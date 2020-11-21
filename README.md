@@ -107,6 +107,8 @@ M. Figurnov, A. Ibraimova, D. P. Vetrov, and P. Kohli
 Figurnov M, Collins MD, Zhu Y, Zhang L, Huang J, Vetrov D, Salakhutdinov R. 
 * **Pixel-wise Attentional Gating for Parsimonious Pixel Labeling** (WACV2019) [[pdf]](https://arxiv.org/pdf/1805.01556) [[matconvnet]](https://github.com/aimerykong/Pixel-Attentional-Gating)  
 S. Kong and C. Fowlkes
+* **Boosting the Performance of CNN Accelerators with Dynamic Fine-Grained Channel Gating** [[pdf]](https://zhouyuan1119.github.io/papers/cgnet-micro2019.pdf) 
+Weizhe Hua, Yuan Zhou, Christopher De Sa, Zhiru Zhang, and G. Edward Suh
 * **Dynamic Convolutions: Exploiting Spatial Sparsity for Faster Inference** (CVPR2020) [[pdf]](https://arxiv.org/pdf/1912.03203.pdf) [[Pytorch]](https://github.com/thomasverelst/dynconv)  
 T. Verelst and T. Tuytelaars, “Dynamic Convolutions: Exploiting Spatial Sparsity for Faster Inference
 * **Spatially Adaptive Inference with Stochastic Feature Sampling and Interpolation** (ECCV2020) [[pdf]](https://arxiv.org/pdf/2003.08866) [[pytorch]](https://github.com/zdaxie/SpatiallyAdaptiveInference-Detection)  
