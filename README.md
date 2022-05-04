@@ -1,5 +1,17 @@
 # Awesome Dynamic Networks and Conditional Computation
+
+
+<br><br>
+
+> **Upcoming ICML 2022 on Dynamic Neural Networks! <https://dynn-icml2022.github.io/>.<br>
+> Submit novel or existing work, submission deadline May 25, 2022: [Call for Papers](https://dynn-icml2022.github.io/cfp/)**
+
+<br><br>
+
+
 Overview of conditional computation and dynamic CNNs for computer vision, focusing on reducing computational cost of existing network architectures. In contrast to static networks, dynamic networks disable parts of the network based on the input image, at inference time. This can save computations and speed up inference, for example by processing easy images with fewer operations. Note that this list mainly focuses on methods reducing the computational cost of existing models (e.g. ResNet models), and does not list all methods that use dynamic computation for custom architectures.
+
+
 
 **This list is growing every day. If a method is missing or listed incorrectly, let me know by sending an <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#104;&#111;&#109;&#97;&#115;&#46;&#118;&#101;&#114;&#101;&#108;&#115;&#116;&#64;&#101;&#115;&#97;&#116;&#46;&#107;&#117;&#108;&#101;&#117;&#118;&#101;&#110;&#46;&#98;&#101;">email</a> or making a GitHub issue!**
 
