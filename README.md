@@ -3,8 +3,7 @@
 
 <br><br>
 
-> **Upcoming ICML 2022 on Dynamic Neural Networks! <https://dynn-icml2022.github.io/>.<br>
-> Submit novel or existing work, submission deadline May 25, 2022: [Call for Papers](https://dynn-icml2022.github.io/cfp/)**
+> **Upcoming ICML 2022 on Dynamic Neural Networks! <https://dynn-icml2022.github.io/> on Friday, July 22.**
 
 <br><br>
 
@@ -13,7 +12,7 @@ Overview of conditional computation and dynamic CNNs for computer vision, focusi
 
 
 
-**This list is growing every day. If a method is missing or listed incorrectly, let me know by sending an <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#104;&#111;&#109;&#97;&#115;&#46;&#118;&#101;&#114;&#101;&#108;&#115;&#116;&#64;&#101;&#115;&#97;&#116;&#46;&#107;&#117;&#108;&#101;&#117;&#118;&#101;&#110;&#46;&#98;&#101;">email</a> or making a GitHub issue!**
+**This list is growing every day. If a method is missing or listed incorrectly, let me know by making a GitHub issue or pull request!**
 
 [Here](https://github.com/MingSun-Tse/EfficientDNNs) is a list with more static and dynamic methods for efficient CNNs.
 
@@ -43,7 +42,8 @@ Yizeng Han, Gao Huang, Shiji Song, Le Yang, Honghui Wang, Yulin Wang
 
 
 ## Methods 
-### Early-exit methods
+### Depth-based methods
+
 Early-exit methods have separate output branches to apply more or fewer layers.
 
 * **BranchyNet: Fast inference via early exiting from deep neural networks** (ICPR2016) [[pdf]](https://ieeexplore.ieee.org/iel7/7893644/7899596/07900006.pdf?casa_token=6Rw2FfYo7GkAAAAA:oTMVtfqbSCwdNlZp9uZBldholjMd52rMGma1WNiASyWhIrShrYifvgactwhUgioAt3Lu2Un7t6mt) [[chainer]](https://github.com/kunglab/branchynet)  
@@ -68,8 +68,7 @@ Hu TK, Chen T, Wang H, Wang Z.
 Ghodrati, A., Bejnordi, B. E., & Habibian, A.  
 [VID]
 
-### Layer skip-based methods
-Skip layer-based methods skip layers conditioned on the input image. For instance, easy images require fewer layers than complex ones.
+Skipping layers conditioned on the input image. For instance, easy images require fewer layers than complex ones:
 
 *  **Adaptive Computation Time for Recurrent Neural Networks** (NIPS 2016 Deep Learning Symposium) [[pdf]](https://arxiv.org/pdf/1603.08983) [[unofficial pytorch]](https://github.com/zphang/adaptive-computation-time-pytorch)  
 A. Graves
@@ -88,8 +87,8 @@ Wang Y, Shen J, Hu TK, Xu P, Nguyen T, Baraniuk RG, Wang Z, Lin Y.
 * **CoDiNet: Path Distribution Modeling with Consistency and Diversity for Dynamic Routing** (TPAMI 2021) [[pdf]](https://ieeexplore.ieee.org/document/9444192)  
 
 
-### Layer recursive-based methods
-Executes some layers multiple times based on complexity.
+
+Executes some layers multiple times ('recursively') based on complexity:
 
 * **IamNN: Iterative and Adaptive Mobile Neural Network for Efficient Image Classification** (ICLR2018 Workshop) [[pdf]](https://arxiv.org/pdf/1804.10123)  
 S. Leroux, P. Molchanov, P. Simoens, B. Dhoedt, T. Breuel, and J. Kautz
@@ -120,9 +119,15 @@ BE Bejnordi, T Blankevoort, M Welling
 Li, Changlin, et al.
 * **Dynamic Slimmable Denoising Network.** (2021) [[pdf]](https://arxiv.org/pdf/2110.08940)
 Jiang, Zutao, Changlin Li, Xiaojun Chang, Jihua Zhu, and Yi Yang
-
-* **DS-Net++: Dynamic Weight Slicing for Efficient Inference in CNNs and Transformers** (2021) [[pdf]] (https://arxiv.org/pdf/2109.10060)
+* **DS-Net++: Dynamic Weight Slicing for Efficient Inference in CNNs and Transformers** (2021) [[pdf]](https://arxiv.org/pdf/2109.10060)
 Li, C., Wang, G., Wang, B., Liang, X., Li, Z., & Chang, X.
+
+* **Borrowing from yourself: Faster future video segmentation with partial channel update** (2022) [[pdf]](https://arxiv.org/abs/2202.05748)
+
+* **Multi-dimensional dynamic model compression for efficient image super-resolution (WACV2022)** [[pdf]](https://openaccess.thecvf.com/content/WACV2022/papers/Hou_Multi-Dimensional_Dynamic_Model_Compression_for_Efficient_Image_Super-Resolution_WACV_2022_paper.pdf)
+
+
+
 
 ### Spatial methods
 Spatial methods exploit spatial redundancies, such as unimportant regions, to save computations
@@ -147,6 +152,8 @@ Zhang Y, Zhao R, Hua W, Xu N, Suh GE, Zhang Z.
 
 * **Skip-Convolutions for Efficient Video Processing** (CVPR2021) [[pdf]](https://openaccess.thecvf.com/content/CVPR2021/papers/Habibian_Skip-Convolutions_for_Efficient_Video_Processing_CVPR_2021_paper.pdf) [[pytorch]](https://github.com/Qualcomm-AI-research/Skip-Conv)  
 [VID]
+
+**Focal Sparse Convolutional Networks for 3D Object Detection** (CVPR2022) [[pdf]](https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_Focal_Sparse_Convolutional_Networks_for_3D_Object_Detection_CVPR_2022_paper.pdf)
 
 #### Spatial per-block
 * **SBNet: Sparse Blocks Network for Fast Inference** (CVPR2018) [[pdf]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Ren_SBNet_Sparse_Blocks_CVPR_2018_paper.pdf) [[tensorflow]](https://github.com/uber-research/sbnet)  
@@ -184,9 +191,11 @@ A. Almahairi, N. Ballas, T. Cooijmans, Y. Zheng, H. Larochelle, and A. Courville
 * **Learning Where to Focus for Eﬃcient Video Object Detection** (ECCV2020)  [[pdf]](https://arxiv.org/pdf/1911.05253.pdf) [[github]](https://github.com/jiangzhengkai/LSTS)  
 Z. Jiang et al.
 
-* **Adaptive Focus for Efficient Video Recognition** [[Arxiv 2021]](https://arxiv.org/pdf/2105.03245)  
+* **Adaptive Focus for Efficient Video Recognition** (2021) [[pdf]](https://arxiv.org/pdf/2105.03245)  
 Yulin Wang, Zhaoxi Chen, Haojun Jiang, Shiji Song, Yizeng Han, Gao Huang  
 [VID]
+
+* **Adafocus v2: End-to-end training of spatial dynamic networks for video recognition** (2021) [[pdf]](https://arxiv.org/abs/2112.14238) [VID]
 
 #### Other (dilation etc)
 * **D^2Conv3D: Dynamic Dilated Convolutions for Object Segmentation in Videos**
@@ -203,6 +212,8 @@ Adaptive resolution methods adapt the processing resolution to the input image.
 * **Resolution Switchable Networks for Runtime Eﬃcient Image Recognition** (ECCV2020) [[pdf]](https://arxiv.org/pdf/2007.09558) [[pytorch]](https://github.com/yikaiw/RS-Nets)  
 Y. Wang, F. Sun, D. Li, and A. Yao
 * **Dynamic Resolution Network** (2021) [[pdf]](https://arxiv.org/pdf/2106.02898)
+* **Multi-dimensional dynamic model compression for efficient image super-resolution (WACV2022)** [[pdf]](https://openaccess.thecvf.com/content/WACV2022/papers/Hou_Multi-Dimensional_Dynamic_Model_Compression_for_Efficient_Image_Super-Resolution_WACV_2022_paper.pdf)
+
 
 ### Transformers
 * **Dynamically Pruning Segformer for Efficient Semantic Segmentation** (Arxiv2021) [[pdf]](https://arxiv.org/pdf/2111.09499.pdf)  
@@ -221,6 +232,9 @@ A Bakhtiarnia, Q Zhang, A Iosifidis
 * **Dynamic Grained Encoder for Vision Transformers** (NIPS2021) [[pdf]](https://papers.nips.cc/paper/2021/file/2d969e2cee8cfa07ce7ca0bb13c7a36d-Paper.pdf)  
 Song, Lin, Songyang Zhang, Songtao Liu, Zeming Li, Xuming He, Hongbin Sun, Jian Sun, and Nanning Zhen
 
+* **A-ViT: Adaptive Tokens for Efficient Vision Transformer** (CVPR2022) [[pdf]](https://openaccess.thecvf.com/content/CVPR2022/html/Yin_A-ViT_Adaptive_Tokens_for_Efficient_Vision_Transformer_CVPR_2022_paper.html)
+
+
 ## Dynamic filters/weights
 * **Dynamic filter networks** (NIPS2016) [[pdf]](http://papers.nips.cc/paper/6578-improving-pac-exploration-using-the-median-of-means.pdf)  
 Jia, X., De Brabandere, B., Tuytelaars, T., & Gool, L. V.
@@ -234,11 +248,21 @@ Chen, J., Wang, X., Guo, Z., Zhang, X., & Sun, J.
 
 * **Adaptive Convolutions with Per-pixel Dynamic Filter Atom** (ICCV2021) [[pdf]](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Adaptive_Convolutions_With_Per-Pixel_Dynamic_Filter_Atom_ICCV_2021_paper.pdf)  
 
-### Custom architectures
-Some methods use custom architectures for dynamic inference, e.g. by refining predictions in multiple stages.
+## Quantization
+* **Instance-Aware Dynamic Neural Network Quantization** (CVPR2022) [[pdf]] (https://openaccess.thecvf.com/content/CVPR2022/html/Liu_Instance-Aware_Dynamic_Neural_Network_Quantization_CVPR_2022_paper.html)
 
-#### Mixture of experts
+## Mixture of experts
 * **HydraNets: Specialized Dynamic Architectures for Efficient Inference** (CVPR2019) [[pdf]](https://openaccess.thecvf.com/content_cvpr_2018/papers/Mullapudi_HydraNets_Specialized_Dynamic_CVPR_2018_paper.pdf)   
 Teja Mullapudi R, Mark WR, Shazeer N, Fatahalian K.
 * **Outrageously large neural networks: The sparsely-gated mixture-of-experts layer** (ICLR 2017) [[pdf]](https://arxiv.org/pdf/1701.06538.pdf%22%20%5Ct%20%22_blank)  [[unofficial pytorch]](https://github.com/davidmrau/mixture-of-experts)  
 Shazeer N, Mirhoseini A, Maziarz K, Davis A, Le Q, Hinton G, Dean J. 
+
+
+
+### Other
+
+#### Video
+(if not listed above with [VID] tag)
+* **Leaky Gated Cross-Attention for Weakly Supervised Multi-Modal Temporal Action Localization** (WACV2022) [[pdf]](https://openaccess.thecvf.com/content/WACV2022/html/Lee_Leaky_Gated_Cross-Attention_for_Weakly_Supervised_Multi-Modal_Temporal_Action_Localization_WACV_2022_paper.html) [VID]
+
+* **ELIχR: Eliminating Computation Redundancy in CNN-Based Video Processing** (RSDHA2021) [[IEEE]](https://ieeexplore.ieee.org/document/9651154) [ VID]
